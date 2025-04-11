@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            xTxt = new TextBox();
+            yTxt = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            dydelfTxt = new TextBox();
+            krokodylTxt = new TextBox();
+            SzopTxt = new TextBox();
+            CzasTxt = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
@@ -45,19 +45,19 @@
             Anuluj = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // xTxt
             // 
-            textBox1.Location = new Point(82, 98);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            xTxt.Location = new Point(82, 98);
+            xTxt.Name = "xTxt";
+            xTxt.Size = new Size(100, 23);
+            xTxt.TabIndex = 0;
             // 
-            // textBox2
+            // yTxt
             // 
-            textBox2.Location = new Point(82, 165);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            yTxt.Location = new Point(82, 165);
+            yTxt.Name = "yTxt";
+            yTxt.Size = new Size(100, 23);
+            yTxt.TabIndex = 1;
             // 
             // label1
             // 
@@ -87,33 +87,33 @@
             label3.TabIndex = 4;
             label3.Text = "Y";
             // 
-            // textBox3
+            // dydelfTxt
             // 
-            textBox3.Location = new Point(262, 98);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 5;
+            dydelfTxt.Location = new Point(262, 98);
+            dydelfTxt.Name = "dydelfTxt";
+            dydelfTxt.Size = new Size(100, 23);
+            dydelfTxt.TabIndex = 5;
             // 
-            // textBox4
+            // krokodylTxt
             // 
-            textBox4.Location = new Point(262, 165);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 6;
+            krokodylTxt.Location = new Point(262, 165);
+            krokodylTxt.Name = "krokodylTxt";
+            krokodylTxt.Size = new Size(100, 23);
+            krokodylTxt.TabIndex = 6;
             // 
-            // textBox5
+            // SzopTxt
             // 
-            textBox5.Location = new Point(444, 98);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 7;
+            SzopTxt.Location = new Point(444, 98);
+            SzopTxt.Name = "SzopTxt";
+            SzopTxt.Size = new Size(100, 23);
+            SzopTxt.TabIndex = 7;
             // 
-            // textBox6
+            // CzasTxt
             // 
-            textBox6.Location = new Point(444, 261);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 8;
+            CzasTxt.Location = new Point(444, 261);
+            CzasTxt.Name = "CzasTxt";
+            CzasTxt.Size = new Size(100, 23);
+            CzasTxt.TabIndex = 8;
             // 
             // label4
             // 
@@ -159,6 +159,7 @@
             Zapisz.TabIndex = 13;
             Zapisz.Text = "Zapisz";
             Zapisz.UseVisualStyleBackColor = true;
+            Zapisz.Click += Zapisz_Click;
             // 
             // Anuluj
             // 
@@ -181,15 +182,15 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
+            Controls.Add(CzasTxt);
+            Controls.Add(SzopTxt);
+            Controls.Add(krokodylTxt);
+            Controls.Add(dydelfTxt);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(yTxt);
+            Controls.Add(xTxt);
             Name = "Ustawienia";
             Text = "Ustawienia";
             ResumeLayout(false);
@@ -198,15 +199,15 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox xTxt;
+        private TextBox yTxt;
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox dydelfTxt;
+        private TextBox krokodylTxt;
+        private TextBox SzopTxt;
+        private TextBox CzasTxt;
         private Label label4;
         private Label label5;
         private Label label6;
